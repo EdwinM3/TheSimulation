@@ -1,99 +1,8 @@
 fileFormatVersion: 2
 guid: 917606fa300a2e44a9e513bdb650395f
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Barrel_IR
-    100002: Base_Barrel_high
-    100004: Base_Barrel_high.001
-    100006: Base_Barrel_low.001
-    100008: Camera
-    100010: Claw_Top_Cube.000
-    100012: Claw_Top_Cube.001
-    100014: Claw_Top_Cube.002
-    100016: Claw_Top_Cube.003
-    100018: Cylinder
-    100020: Damaged_Barrel_high
-    100022: Damaged_Barrel_high.001
-    100024: Damaged_Barrel_low
-    100026: Damaged_Barrel_second_high
-    100028: Damaged_Barrel_second_high.001
-    100030: Damaged_Barrel_second_low
-    100032: Light
-    100034: //RootNode
-    400000: Barrel_IR
-    400002: Base_Barrel_high
-    400004: Base_Barrel_high.001
-    400006: Base_Barrel_low.001
-    400008: Camera
-    400010: Claw_Top_Cube.000
-    400012: Claw_Top_Cube.001
-    400014: Claw_Top_Cube.002
-    400016: Claw_Top_Cube.003
-    400018: Cylinder
-    400020: Damaged_Barrel_high
-    400022: Damaged_Barrel_high.001
-    400024: Damaged_Barrel_low
-    400026: Damaged_Barrel_second_high
-    400028: Damaged_Barrel_second_high.001
-    400030: Damaged_Barrel_second_low
-    400032: Light
-    400034: //RootNode
-    2000000: Camera
-    2100000: No Name
-    2100002: Barrel
-    2100004: None
-    2100006: Material
-    2100008: None.001
-    2100010: None.003
-    2100012: None.002
-    2100014: None.005
-    2100016: None.004
-    2100018: None.007
-    2100020: None.006
-    2300000: Base_Barrel_high
-    2300002: Base_Barrel_high.001
-    2300004: Base_Barrel_low.001
-    2300006: Claw_Top_Cube.000
-    2300008: Claw_Top_Cube.001
-    2300010: Claw_Top_Cube.002
-    2300012: Claw_Top_Cube.003
-    2300014: Cylinder
-    2300016: Damaged_Barrel_high
-    2300018: Damaged_Barrel_high.001
-    2300020: Damaged_Barrel_low
-    2300022: Damaged_Barrel_second_high
-    2300024: Damaged_Barrel_second_high.001
-    2300026: Damaged_Barrel_second_low
-    3300000: Base_Barrel_high
-    3300002: Base_Barrel_high.001
-    3300004: Base_Barrel_low.001
-    3300006: Claw_Top_Cube.000
-    3300008: Claw_Top_Cube.001
-    3300010: Claw_Top_Cube.002
-    3300012: Claw_Top_Cube.003
-    3300014: Cylinder
-    3300016: Damaged_Barrel_high
-    3300018: Damaged_Barrel_high.001
-    3300020: Damaged_Barrel_low
-    3300022: Damaged_Barrel_second_high
-    3300024: Damaged_Barrel_second_high.001
-    3300026: Damaged_Barrel_second_low
-    4300000: Base_Barrel_high
-    4300002: Damaged_Barrel_low
-    4300004: Damaged_Barrel_high
-    4300006: Damaged_Barrel_second_low
-    4300008: Base_Barrel_low.001
-    4300010: Damaged_Barrel_second_high
-    4300012: Base_Barrel_high.001
-    4300014: Damaged_Barrel_high.001
-    4300016: Damaged_Barrel_second_high.001
-    4300018: Cylinder
-    4300020: Claw_Top_Cube.002
-    4300022: Claw_Top_Cube.000
-    4300024: Claw_Top_Cube.001
-    4300026: Claw_Top_Cube.003
-    10800000: Light
+  serializedVersion: 26
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -128,6 +37,8 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -135,27 +46,32 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -165,8 +81,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
