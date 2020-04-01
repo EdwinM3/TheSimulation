@@ -34,16 +34,16 @@ public class PlayerCameraController : MonoBehaviour
         Normal,
         HookshotThrown,
         HookshotFlyingPlayer,
-        
+
     }
 
     // Start is called before the first frame update
     private void Awake()
     {
-        characterController = GetComponent<CharacterController>();
-        playerCamera = transform.Find("Camera").GetComponent<Camera>();
-        cameraFov = playerCamera.GetComponent<CameraFov>();
-        Cursor.lockState = CursorLockMode.Locked;
+        characterController = GetComponent<CharacterController>();//getting the component of the character Controllers
+        playerCamera = transform.Find("Camera").GetComponent<Camera>(); // gets the component of the camera
+        cameraFov = playerCamera.GetComponent<CameraFov>(); //made a class for camera Fov then got the component of the FOV
+        Cursor.lockState = CursorLockMode.Locked; //This sets the cursor of the hook to the middle of the screen.
         state = State.Normal;
         hookshotTransform.gameObject.SetActive(false);
     }
@@ -70,28 +70,37 @@ public class PlayerCameraController : MonoBehaviour
                     HandleHookshotMovement();
                     break;
             }
+
         }
+
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
         }
     }
-    private void HandleCharacterLook()
+
+    
+       
+
+private void HandleCharacterLook()
     {
         float lookX = Input.GetAxisRaw("Mouse X");
         float lookY = Input.GetAxisRaw("Mouse Y");
 
         //rotate the transform with the input speed on the local Y axis
-        transform.Rotate(new Vector3(0f, lookX * mouseSensitivity, 0f), Space.Self);
+        transform.Rotate(new Vector3(0f, lookX * mouseSensitivity, 0f), Space.Self); //This rotates and takes the mouses raw axis on the x coordinates and rotates it with the input speed on the mouse's x axis. 
 
         cameraVerticalAngle -= lookY * mouseSensitivity;
 
-        cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -89f, 89);
+        cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -89f, 89); //clamps the value of the mouse axis y so the character can't look 90 degrees up or 90 degrees down. Limiting it to -89 and 89 degrees in the y axis.
 
         playerCamera.transform.localEulerAngles = new Vector3(cameraVerticalAngle, 0, 0);
     }
 
-    private void HandleCharacterMovement()
+
+
+private void HandleCharacterMovement()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveZ = Input.GetAxisRaw("Vertical");
@@ -104,7 +113,7 @@ public class PlayerCameraController : MonoBehaviour
         {
             characterVelocityY = 0f;
             //Jump
-            if (TestInputJump())
+            if (TestInputJump()) // if the player is grounded with jump
             {
                 float jumpSpeed = 30f;
                 characterVelocityY = jumpSpeed;
@@ -133,7 +142,7 @@ public class PlayerCameraController : MonoBehaviour
     }
     private void ResetGravityEffect()
     {
-        characterVelocityY = 0f;
+        characterVelocityY = 0f;//After the user presses the left mouse button the players velocity is set to 0?
     }
     private void HandleHookshotStart()
     {
@@ -215,7 +224,7 @@ public class PlayerCameraController : MonoBehaviour
     private bool TestInputDownHookshot()
 
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E)) // why is this here? If there is a return value after an if statement it returns the value to that if statement condition and then after that it doesn't run again? This seems counter intuitive and constantly plays a sound after the user presses that button and gives freedom to spam sound.
         {
             audioSource.PlayOneShot(grappleSound, grappleVolume);
         }
