@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreTextScript : MonoBehaviour
 {
-    Text text;
+    public TextMeshProUGUI coinTextmeshPro;
     public static int coinAmount;
     // Start is called before the first frame update
     void Start()
     {
-        text = GetComponent<Text>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        text.text = coinAmount.ToString();
+        coinTextmeshPro.text = "Amount of coins : " + coinAmount.ToString();
     }
 }
