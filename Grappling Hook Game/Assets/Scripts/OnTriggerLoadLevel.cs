@@ -1,15 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OnTriggerLoadLevel : MonoBehaviour
-{
-    public GameObject guiObject;
-    public string levelToLoad;
+{ 
     // Start is called before the first frame update
     void Start()
     {
-        guiObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -17,15 +16,7 @@ public class OnTriggerLoadLevel : MonoBehaviour
     {
         if (Other.gameObject.tag == "Player")
         {
-            guiObject.SetActive(true);
-            if (guiObject.activeInHierarchy == true && Input.GetButtonDown("Use"))
-            {
-                Application.LoadLevel(levelToLoad);
-            }
+            SceneManager.LoadScene(3);
         }
-    }
-     void OnTriggerExit()
-    {
-        guiObject.SetActive(false);
     }
 }
