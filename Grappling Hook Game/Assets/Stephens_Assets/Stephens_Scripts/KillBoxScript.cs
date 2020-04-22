@@ -22,7 +22,7 @@ public class KillBoxScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
 
    void OnControllerColliderHit(ControllerColliderHit hit)
@@ -45,8 +45,16 @@ public class KillBoxScript : MonoBehaviour
         for (int i = AmountofTime; i >= 0; i--)
         {
             yield return new WaitForSeconds(2);
+            if(AmountofTime >= 0)
+            {
+                AmountofTime--;
+            }
+            else
+            {
+                warningTextmeshPro.text = "";
+                transform.position = respawnPosition;
+            }
             
-            AmountofTime--;
             warningTextmeshPro.text = "Warning ! Please turn back! :" + AmountofTime.ToString();
 
             yield return new WaitForSeconds(.5f);
@@ -54,11 +62,8 @@ public class KillBoxScript : MonoBehaviour
             yield return new WaitForSeconds(.5f);
             warningTextmeshPro.text = "Warning ! Please turn back! :" + AmountofTime.ToString();
             yield return new WaitForSeconds(.5f);
-
-            if (AmountofTime == 0)
-            {
-                transform.position = respawnPosition;
-            }
+                
+            
         }
     }
 }

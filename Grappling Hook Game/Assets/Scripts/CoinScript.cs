@@ -21,7 +21,12 @@ public class CoinScript : MonoBehaviour
         {
             //other.GetComponent<PlayerScript>().points++;
             ScoreTextScript.coinAmount += 1;
-            Destroy(gameObject);
+            Destroy(gameObject, 0.5f);
+
+            
+
         }
+
+        gameObject.GetComponent<ParticleSystem>().Play();
     }
 }
