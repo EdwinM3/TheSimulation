@@ -142,7 +142,8 @@ private void HandleCharacterMovement()
     }
     private void ResetGravityEffect()
     {
-        characterVelocityY = 0f;//After the user presses the left mouse button the players velocity is set to 0?
+        characterVelocityY = 25f;//After the user presses the left mouse button the players velocity is set to 0?
+       
     }
     private void HandleHookshotStart()
     {
