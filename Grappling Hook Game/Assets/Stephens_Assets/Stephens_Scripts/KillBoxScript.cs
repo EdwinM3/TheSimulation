@@ -9,9 +9,11 @@ public class KillBoxScript : MonoBehaviour
 
     public TextMeshProUGUI warningTextmeshPro;
 
+    public GameObject reticle;
+
     private IEnumerator coroutine;
 
-    private int AmountofTime = 500;
+    private int AmountofTime = 150;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,14 @@ public class KillBoxScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+      if(AmountofTime < 150)
+        {
+            reticle.SetActive(false);
+        }
+      else
+        {
+            reticle.SetActive(true);
+        }
     }
 
    void OnControllerColliderHit(ControllerColliderHit hit)
@@ -34,8 +43,11 @@ public class KillBoxScript : MonoBehaviour
         }
         else
         {
-            AmountofTime = 500;
             StopCoroutine("OutofBounds");
+            AmountofTime = 150;
+
+            warningTextmeshPro.text = "";
+            
         }
     } 
     
@@ -48,6 +60,15 @@ public class KillBoxScript : MonoBehaviour
             if(AmountofTime >= 0)
             {
                 AmountofTime--;
+
+                yield return new WaitForSeconds(.5f);
+                warningTextmeshPro.text = "Warning ! Please turn back! :" + AmountofTime.ToString();
+
+                yield return new WaitForSeconds(.5f);
+                warningTextmeshPro.text = "";
+                yield return new WaitForSeconds(.5f);
+                warningTextmeshPro.text = "Warning ! Please turn back! :" + AmountofTime.ToString();
+                yield return new WaitForSeconds(.5f);
             }
             else
             {
@@ -55,13 +76,6 @@ public class KillBoxScript : MonoBehaviour
                 transform.position = respawnPosition;
             }
             
-            warningTextmeshPro.text = "Warning ! Please turn back! :" + AmountofTime.ToString();
-
-            yield return new WaitForSeconds(.5f);
-            warningTextmeshPro.text = "";
-            yield return new WaitForSeconds(.5f);
-            warningTextmeshPro.text = "Warning ! Please turn back! :" + AmountofTime.ToString();
-            yield return new WaitForSeconds(.5f);
                 
             
         }

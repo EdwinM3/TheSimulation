@@ -1,0 +1,45 @@
+fileFormatVersion: 2
+guid: dd9581e88a7c9484e94e04533feb0daf
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sitka Small
+  fontNames:
+  - Sitka Small
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: cc01d650520ccfe478ce5c5f22439ad5, type: 3}
+  - {fileID: 12800000, guid: a0458d80f395ed04f9212e9f688a708f, type: 3}
+  - {fileID: 12800000, guid: a7f892c07dd7d2742b17dae284c59075, type: 3}
+  - {fileID: 12800000, guid: 82f7a7c04c3cef34a9876bbe9883a456, type: 3}
+  - {fileID: 12800000, guid: d4f49b81d324a524b901f064f0bb72f1, type: 3}
+  - {fileID: 12800000, guid: 37bed8f1dab158648847a02981b452de, type: 3}
+  - {fileID: 12800000, guid: 836c5d22d12c5a6409ff1cf3b8b3be87, type: 3}
+  - {fileID: 12800000, guid: bf76ebe32b6f67a498aab245c78bc9b4, type: 3}
+  - {fileID: 12800000, guid: 2b5ad494c27449446a1f4495c96239ac, type: 3}
+  - {fileID: 12800000, guid: daeed61699603fa4981d5b6300b37022, type: 3}
+  - {fileID: 12800000, guid: b9d589b72ae0d384e8cabcdddce5ed15, type: 3}
+  - {fileID: 12800000, guid: 841444a8573d4f144aa3da4e42619a05, type: 3}
+  - {fileID: 12800000, guid: 7b092ec84135df14bbd26ba3fe8e6a21, type: 3}
+  - {fileID: 12800000, guid: 7e39923a1c1ae04449728ec4f7080f75, type: 3}
+  - {fileID: 12800000, guid: 9816673ae907fe84b98ec94c5dfdd420, type: 3}
+  - {fileID: 12800000, guid: 7f10d4aabf6a5944894f749db49ac55e, type: 3}
+  - {fileID: 12800000, guid: 9194990b2fca5db49be535fffdec877a, type: 3}
+  - {fileID: 12800000, guid: 0e28a71bc9456ef4a9449995ba085083, type: 3}
+  - {fileID: 12800000, guid: 3b957c8b80230dc4eb5c02676d0b3bd1, type: 3}
+  - {fileID: 12800000, guid: 2d57fdcd37f77cc4296c1ff915cb0f70, type: 3}
+  - {fileID: 12800000, guid: 5428ba7e825a0894c92c06d4dc17e91f, type: 3}
+  - {fileID: 12800000, guid: 0ad7fe7e10e3d0644aa5b8c359cc8284, type: 3}
+  - {fileID: 12800000, guid: d139a47f9f052824c9f5468c0c964895, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

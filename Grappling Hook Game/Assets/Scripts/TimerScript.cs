@@ -50,7 +50,7 @@ public class TimerScript : MonoBehaviour
             secStr += "0";
         }
         secStr += sec;
-        timertext.text = "Time Until Failure Of Mission :" + "Mins: " + min + "Seconds: " + secStr;
+        timertext.text = min + ":" + secStr;
  
     }
     void Update()
