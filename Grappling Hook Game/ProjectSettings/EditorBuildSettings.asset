@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu_Scene_Stephen.unity
     guid: 4eb66d57fa694e04fbf6d6221b698c9c
   - enabled: 1
+    path: Assets/Stephens_Assets/Stephens_Scenes/InstructionsScreen.unity
+    guid: 699a03b8968a2cd4e991654acd057c63
+  - enabled: 1
     path: Assets/Scenes/Level 1 assembly.unity
     guid: 740b4469b330d804eb042d993070c16e
   - enabled: 1
@@ -23,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndingScene.unity
     guid: a364ac17f709f7b4eb7618d5513082bc
+  - enabled: 1
+    path: Assets/Stephens_Assets/Stephens_Scenes/TryAgainScreen.unity
+    guid: 8004352c8e8aeca43a2fcb9fbb9fa79a
   m_configObjects: {}

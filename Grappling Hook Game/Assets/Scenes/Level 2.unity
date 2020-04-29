@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0000508379, g: 0.00006613617, b: 0.14466785, a: 1}
+  m_IndirectSpecularColor: {r: 0.000054897602, g: 0.00006609926, b: 0.14454328, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2380,8 +2380,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPosition: {x: 0, y: 0, z: 0}
-  warningTextmeshPro: {fileID: 0}
-  reticle: {fileID: 0}
+  warningTextmeshPro: {fileID: 1204312488}
+  reticle: {fileID: 373164006}
 --- !u!81 &419908487
 AudioListener:
   m_ObjectHideFlags: 0
@@ -9667,7 +9667,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 2.2073e-41, w: 1.02e-43}
+  m_BoundingSphereOverride: {x: 2.87e-42, y: 1.9013e-41, z: -3.59e-43, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 2
   m_ShadowAngle: 0
@@ -21798,7 +21798,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.38e-43, y: -2.0940635e+37, z: 5.38e-43, w: 0}
+  m_BoundingSphereOverride: {x: 8.44e-43, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -26234,8 +26234,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880486912}
-  m_LocalRotation: {x: 0.16683957, y: -0.08950047, z: -0.015024157, w: -0.98179865}
-  m_LocalPosition: {x: 630.8091, y: -1016.26636, z: -1153.746}
+  m_LocalRotation: {x: 0.107448, y: -0.11108595, z: -0.01178909, w: -0.9879149}
+  m_LocalPosition: {x: 323.94055, y: -205.88531, z: -750.4157}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

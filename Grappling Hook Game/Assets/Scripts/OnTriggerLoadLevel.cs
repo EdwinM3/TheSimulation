@@ -43,13 +43,13 @@ public class OnTriggerLoadLevel : MonoBehaviour
 
         int buildIndex = currentScene.buildIndex;
 
-        if(buildIndex == 1)
-        {
-            SceneManager.LoadScene(2);
-        }
         if(buildIndex == 2)
         {
             SceneManager.LoadScene(3);
+        }
+        if(buildIndex == 3)
+        {
+            SceneManager.LoadScene(4);
         }
 
     }

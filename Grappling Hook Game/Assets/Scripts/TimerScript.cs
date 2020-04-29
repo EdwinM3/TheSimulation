@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class TimerScript : MonoBehaviour
@@ -13,7 +14,7 @@ public class TimerScript : MonoBehaviour
 
     private string seconds;
 
-    public float amountofTime = 5000;
+    public float amountofTime = 4;
 
     void Start()
     {
@@ -60,6 +61,12 @@ public class TimerScript : MonoBehaviour
             Timer();
             SetTimerText();
         }
+
+        if (amountofTime == 0)
+            SceneManager.LoadScene(6);
+        
+       
+        
 
     }
 
