@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CoinScript : MonoBehaviour
 {
+
+    public AudioSource coin;
     // Start is called before the first frame update
     void Start()
     {
-        
+        coin = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,8 +25,12 @@ public class CoinScript : MonoBehaviour
             ScoreTextScript.coinAmount += 1;
             Destroy(gameObject, 0.5f);
 
-            
+            coin.Play();
 
+        }
+        else
+        {
+            coin.Stop();
         }
 
         gameObject.GetComponent<ParticleSystem>().Play();
