@@ -13,12 +13,16 @@ public class KillBoxScript : MonoBehaviour
 
     private IEnumerator coroutine;
 
+    public AudioSource warningSound;
+
     private int AmountofTime = 150;
 
     // Start is called before the first frame update
     void Start()
     {
-        respawnPosition = transform.position;
+        
+
+        
     }
 
     // Update is called once per frame
@@ -32,18 +36,31 @@ public class KillBoxScript : MonoBehaviour
         {
             reticle.SetActive(true);
         }
+
+      if(warningTextmeshPro.text.Equals("Warning ! Please turn back! :" + AmountofTime.ToString()))
+        {
+            warningSound.Play();
+        }
+        else
+        {
+            warningSound.Stop();
+        }
     }
 
    void OnControllerColliderHit(ControllerColliderHit hit)
     {       
         if (hit.gameObject.tag == "Killbox")
         {
+            
             StartCoroutine("OutofBounds", true);
-
+            
+            
         }
         else
         {
+            
             StopCoroutine("OutofBounds");
+            warningSound.Stop();
             AmountofTime = 150;
 
             warningTextmeshPro.text = "";
@@ -57,6 +74,7 @@ public class KillBoxScript : MonoBehaviour
         for (int i = AmountofTime; i >= 0; i--)
         {
             yield return new WaitForSeconds(2);
+
             if(AmountofTime >= 0)
             {
                 AmountofTime--;
