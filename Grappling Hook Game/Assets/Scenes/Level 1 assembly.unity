@@ -346,7 +346,7 @@ PrefabInstance:
     - target: {fileID: 2799681396282366436, guid: 8765f66ad6c185e49a51f2f9a30b4651,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1064
+      value: 1187
       objectReference: {fileID: 0}
     - target: {fileID: 2799681396282366436, guid: 8765f66ad6c185e49a51f2f9a30b4651,
         type: 3}
@@ -387,6 +387,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799681396282366439, guid: 8765f66ad6c185e49a51f2f9a30b4651,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799681396282366439, guid: 8765f66ad6c185e49a51f2f9a30b4651,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2799681396282366457, guid: 8765f66ad6c185e49a51f2f9a30b4651,
         type: 3}
@@ -4453,6 +4463,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2799681396282366439, guid: 8765f66ad6c185e49a51f2f9a30b4651,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799681396282366439, guid: 8765f66ad6c185e49a51f2f9a30b4651,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2799681396282366457, guid: 8765f66ad6c185e49a51f2f9a30b4651,
         type: 3}
       propertyPath: m_Name
@@ -7517,6 +7537,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 86.267395
       objectReference: {fileID: 0}
+    - target: {fileID: 2799681396282366439, guid: 8765f66ad6c185e49a51f2f9a30b4651,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799681396282366439, guid: 8765f66ad6c185e49a51f2f9a30b4651,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2799681396282366457, guid: 8765f66ad6c185e49a51f2f9a30b4651,
         type: 3}
       propertyPath: m_Name
@@ -8629,6 +8659,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799681396282366439, guid: 8765f66ad6c185e49a51f2f9a30b4651,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799681396282366439, guid: 8765f66ad6c185e49a51f2f9a30b4651,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2799681396282366457, guid: 8765f66ad6c185e49a51f2f9a30b4651,
         type: 3}
@@ -11746,6 +11786,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799681396282366439, guid: 8765f66ad6c185e49a51f2f9a30b4651,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799681396282366439, guid: 8765f66ad6c185e49a51f2f9a30b4651,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2799681396282366457, guid: 8765f66ad6c185e49a51f2f9a30b4651,
         type: 3}
