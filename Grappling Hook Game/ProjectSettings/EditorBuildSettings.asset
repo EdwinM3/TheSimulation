@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Stephens_Assets/Stephens_Scenes/TryAgainScreen.unity
     guid: 8004352c8e8aeca43a2fcb9fbb9fa79a
+  - enabled: 1
+    path: Assets/Stephens_Assets/Stephens_Scenes/FinishedGame.unity
+    guid: 47fe24350c62d9245a1f534209c1255b
   m_configObjects: {}
