@@ -20,8 +20,8 @@ public class KillBoxScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
 
+        respawnPosition = transform.position;
         
     }
 

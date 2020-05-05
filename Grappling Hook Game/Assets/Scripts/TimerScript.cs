@@ -14,7 +14,7 @@ public class TimerScript : MonoBehaviour
 
     private string seconds;
 
-    public float amountofTime = 4;
+    public static float amountofTime = 361;
 
     void Start()
     {

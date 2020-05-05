@@ -52,5 +52,10 @@ public class OnTriggerLoadLevel : MonoBehaviour
             SceneManager.LoadScene(4);
         }
 
+        if(buildIndex == 4)
+        {
+            SceneManager.LoadScene(7);
+        }
+
     }
 }
