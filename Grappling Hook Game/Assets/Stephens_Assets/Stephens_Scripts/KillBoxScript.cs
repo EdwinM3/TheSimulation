@@ -15,7 +15,7 @@ public class KillBoxScript : MonoBehaviour
 
     public AudioSource warningSound;
 
-    private int AmountofTime = 150;
+    private int AmountofTime = 60;
 
     // Start is called before the first frame update
     void Start()
@@ -73,7 +73,7 @@ public class KillBoxScript : MonoBehaviour
         
         for (int i = AmountofTime; i >= 0; i--)
         {
-            yield return new WaitForSeconds(2);
+            
 
             if(AmountofTime >= 0)
             {
