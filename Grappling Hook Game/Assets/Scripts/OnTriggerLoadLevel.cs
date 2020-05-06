@@ -54,7 +54,7 @@ public class OnTriggerLoadLevel : MonoBehaviour
 
         if(buildIndex == 4)
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(5);
         }
 
     }
